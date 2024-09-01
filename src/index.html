@@ -9,205 +9,227 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
-  <body class="overflow-x-hidden flex min-w-full gap-0.5">
-    <div class="bg-[#794D9A] flex flex-col gap-20">
-      <div class="">
-        <div class="w-full bg-cover bg-center bg-[url('bg1.jpg')]">
-          <!--self -->
-          <div class="w-full p-3 flex justify-between">
-            <span class="text-[#FFFFFF]">Carteira</span>
+  <body class="overflow-x-hidden flex min-w-full">
+    <div class="bg-[#794D9A] flex flex-col gap-8 pb-10 ">
+      <!-- Header Section -->
+      <div class="w-full bg-cover bg-center bg-[url('bg1.jpg')]">
+        <div class="w-full p-3 flex justify-between">
+          <span class="text-[#FFFFFF]">Carteira</span>
+          <div class="sm:hidden">
             <i class="fa-solid fa-bars mt-1"></i>
           </div>
-          <div class="flex flex-col justify-center items-center h-[250px]">
-            <div class="flex items-center justify-center max-h-full flex-col">
-              <h2 class="text-[#FFFFFF] w-full text-center font-bold text-xl">
-                Hello I’m Yogesh Patel
-              </h2>
-              <p class="text-white text-sm w-full text-center">
-                Front-End Developer
-              </p>
+          <div class="hidden sm:block">
+            <div class="flex gap-8 items-center text-white">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Skills</a>
+              <a href="#">Portfolio</a>
+              <a href="#">Shop</a>
             </div>
-            <div class="flex gap-4 p-1">
-              <button
-                class="text-[#FFFFFF] h-[58px] w-full bg-[#46265C] rounded-lg"
-              >
-                About Me
-              </button>
-              <button
-                class="text-[#FFFFFF] h-[58px] w-[166px] bg-[#46265C] rounded-lg"
-              >
-                Hire Me
-              </button>
-            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center h-[250px]">
+          <div class="flex items-center justify-center max-h-full flex-col">
+            <p class="text-white text-lg w-full text-center font-bold">
+              Front-End Developer
+            </p>
+            <h2 class="text-[#FFFFFF] w-[75%] text-3xl text-center font-bold">
+              Hello, I’m Yogesh Patel
+            </h2>
+          </div>
+          <div class="flex gap-4 p-1">
+            <button
+              class="text-[#FFFFFF] h-[58px] w-full bg-[#46265C] rounded-lg"
+            >
+              About Me
+            </button>
+            <button
+              class="text-[#FFFFFF] h-[58px] w-[166px] bg-[#46265C] rounded-lg"
+            >
+              Hire Me
+            </button>
           </div>
         </div>
       </div>
-      <div
-        class="bg-[#32223D] h-[919px] w-full rounded-[30px] p-1 relative -top-5 flex flex-col gap-3"
-      >
-        <div class="">
-          <img class="rounded-full p-3" src="img1.jpeg" alt="" />
+      
+      <!-- About Section -->
+      <div class="bg-[#32223D] w-full rounded-[30px] p-8 relative -top-12 sm:-top-10 flex flex-col md:flex-row  gap-3">
+        <div class="flex items-center justify-center">
+          <img class="rounded-full w-[80%]" src="img1.jpeg" alt="Profile Picture" />
         </div>
-
-        <h2 class="text-center text-[#A96CD7]">About Me</h2>
-        <h3 class="text-center text-white">Front-End Developer</h3>
-        <p class="text-center text-white">
+        <div class="md:flex md:flex-col md:gap-4">
+        <h2 class="text-center md:text-start text-[#A96CD7] font-bold text-2xl">About Me</h2>
+        <h3 class="text-center md:text-start text-white">Front-End Developer</h3>
+        <p class="text-center md:text-start text-white">
           Highly motivated and detail-oriented Computer Science Engineering
           graduate with a strong foundation in front-end development, UI/UX
           design, and responsive web technologies. Proficient in multiple
           programming languages and frameworks including HTML, CSS, JavaScript,
           and React.
         </p>
-        <div class=""></div>
-        <div class="flex gap-4 justify-center items-center w-full">
-          <div class="text-[#A96CD7]">Name:</div>
-          <div class="text-white">Yogesh Patel</div>
-        </div>
-        <div class="flex gap-4 justify-center items-center w-full">
-          <div class="text-[#A96CD7]">Date of Birth:</div>
-          <div class="text-white">10 apr 2004l</div>
-        </div>
-        <div class="flex gap-4 justify-center items-center w-full">
-          <div class="text-[#A96CD7]">Address:</div>
-          <div class="text-white">Raigarh (C.G.)</div>
-        </div>
-        <div class="flex gap-4 justify-center items-center w-full">
-          <div class="text-[#A96CD7]">Zip Code:</div>
-          <div class="text-white">496113</div>
-        </div>
-        <div class="flex gap-4 justify-center items-center w-full">
-          <div class="text-[#A96CD7]">Email:</div>
-          <div class="text-white">Yogesh Patel</div>
-        </div>
-        <div class="flex gap-4 justify-center items-center w-full">
-          <div class="text-[#A96CD7]">Phone:</div>
-          <div class="text-white">+91 -----------</div>
+        <div class="sm:flex justify-center items-center md:text-start  gap-6">
+          <div>
+            <div class="flex gap-4 ">
+              <div class="text-[#A96CD7] md:text-start text-xl">Name:</div>
+              <div class="text-white md:text-start">Yogesh Patel</div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-[#A96CD7] md:text-start text-xl">Date of Birth:</div>
+              <div class="text-white md:text-start">10 Apr 2004</div>
+            </div>
+            <div class="flex gap-4 md:text-start">
+              <div class="text-[#A96CD7] text-xl md:text-start">Address:</div>
+              <div class="text-white md:text-start">Raigarh (C.G.)</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex gap-4 md:text-start">
+              <div class="text-[#A96CD7] md:text-start text-xl">Zip Code:</div>
+              <div class="text-white md:text-start">496113</div>
+            </div>
+            <div class="flex gap-4 md:text-start">
+              <div class="text-[#A96CD7] md:text-start text-xl">Email:</div>
+              <div class="text-white md:text-start">yogesh.patel@example.com</div>
+            </div>
+            <div class="flex gap-4 md:text-start">
+              <div class="text-[#A96CD7] text-xl md:text-start">Phone:</div>
+              <div class="text-white md:text-start">+91 -----------</div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Skills -->
-      <div class="flex flex-col justify-center items-center gap-8">
-        <h1 class="h-20 text-center text-white">Skills</h1>
-
-        <div
-          class="h-[374px] bg-[#32223D] w-[75%] rounded-3xl flex flex-col justify-center items-center"
-        >
-          <img class="h-20" src="img1.jpeg" alt="" />
-          <span>Placeholder</span>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-
-        <div
-          class="h-[374px] bg-[#32223D] w-[75%] rounded-3xl flex flex-col justify-center items-center"
-        >
-          <img class="h-20" src="img1.jpeg" alt="" />
-          <span>Placeholder</span>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-
-        <div
-          class="h-[374px] bg-[#32223D] w-[75%] rounded-3xl flex flex-col justify-center items-center"
-        >
-          <img class="h-20" src="img1.jpeg" alt="" />
-          <span>Placeholder</span>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-
-        <div
-          class="h-[374px] bg-[#32223D] w-[75%] rounded-3xl flex flex-col justify-center items-center"
-        >
-          <img class="h-20" src="img1.jpeg" alt="" />
-          <span>Placeholder</span>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-
-        <div
-          class="h-[374px] bg-[#32223D] w-[75%] rounded-3xl flex flex-col justify-center items-center"
-        >
-          <img class="h-20" src="img1.jpeg" alt="" />
-          <span>Placeholder</span>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-
-        <div
-          class="h-[374px] bg-[#32223D] w-[75%] rounded-3xl flex flex-col justify-center items-center"
-        >
-          <img class="h-20" src="img1.jpeg" alt="" />
-          <span>Placeholder</span>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
       </div>
-      <div class="flex justify-center items-center">
-        <div class=" bg-[#32223D] rounded-[40px] w-full flex  justify-center items-center gap-5">
-          <div class="flex justify-center items-center flex-col">
-            <h1>Portfolio</h1>
-          <img class="w-[90%]" src="port img 3.jpg" alt="">  
-          <span>Project</span>
-          </div>
 
-          <div class="flex justify-center items-center flex-col">
-            <h1>Portfolio</h1>
-          <img class="w-[90%]" src="port img2.jpg" alt="">  
-          <span>Project</span>
-          </div>
+      <!-- Skills Section -->
+      <div class="flex flex-col p-2 justify-center items-center gap-8 text-white">
+        <h1 class="text-center text-white font-bold text-3xl">Skills</h1>
+        
+          
+          <!-- 1st Row -->
+           <div class="flex gap-5 overflow-x-auto w-full">
+            <div class=" h-[300px] w-[300px] p-5 bg-[#32223D] rounded-3xl flex flex-col justify-center items-center">
+              <img class="h-20" src="img1.jpeg" alt="Skill Image" />
+              <span class="font-bold">Placeholder</span>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            
 
-          <div class="flex justify-center items-center flex-col">
-            <h1>Portfolio</h1>
-          <img class="w-[90%]" src="port img 1.jpg" alt="">  
-          <span>Project</span>
-          </div>
-        </div>
+            <div class=" h-[300px] w-[300px] p-5 bg-[#32223D] rounded-3xl flex flex-col justify-center items-center">
+              <img class="h-20" src="img1.jpeg" alt="Skill Image" />
+              <span class="font-bold">Placeholder</span>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
 
+            <div class=" h-[300px] w-[300px] p-5 bg-[#32223D] rounded-3xl flex flex-col justify-center items-center">
+              <img class="h-20" src="img1.jpeg" alt="Skill Image" />
+              <span class="font-bold">Placeholder</span>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div class=" h-[300px] w-[300px] p-5 bg-[#32223D] rounded-3xl flex flex-col justify-center items-center">
+              <img class="h-20" src="img1.jpeg" alt="Skill Image" />
+              <span class="font-bold">Placeholder</span>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div class=" h-[300px] w-[300px] p-5 bg-[#32223D] rounded-3xl flex flex-col justify-center items-center">
+              <img class="h-20" src="img1.jpeg" alt="Skill Image" />
+              <span class="font-bold">Placeholder</span>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div class=" h-[300px] w-[300px] p-5 bg-[#32223D] rounded-3xl flex flex-col justify-center items-center">
+              <img class="h-20" src="img1.jpeg" alt="Skill Image" />
+              <span class="font-bold">Placeholder</span>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            
+      
+       </div>  
+      
       </div>
       
-      <form action="">
-        <div class="bg-[#32223D] flex flex-col justify-center items-center gap-5">
-        
-          <h1>Contact</h1>
-          <input class="rounded-xl p-2" type="text" placeholder="Name" required >
-          <input class="rounded-xl p-2" type="email" placeholder="email" required >
-          <input class="rounded-xl p-2" type="text" placeholder="Subject" required >
-          <input class="rounded-xl h-36 w-[95%] text-start" type="text" placeholder="message" required >
+
+      <!-- Portfolio Section -->
+      <div class="flex justify-center items-center">
+        <div class="bg-[#32223D] rounded-[20px] w-full flex justify-center items-center gap-5">
+          <div class="flex justify-center items-center flex-col">
+            <h1>Portfolio</h1>
+            <img class="w-[90%]" src="port img 3.jpg" alt="Portfolio Image 1" />
+            <span class="font-bold">Project</span>
+          </div>
+
+          <div class="flex justify-center items-center flex-col">
+            <h1 class="font-bold">Portfolio</h1>
+            <img class="w-[90%]" src="port img2.jpg" alt="Portfolio Image 2" />
+            <span class="font-bold">Project</span>
+          </div>
+
+          <div class="flex justify-center items-center flex-col">
+            <h1 class="font-bold">Portfolio</h1>
+            <img class="w-[90%]" src="port img 1.jpg" alt="Portfolio Image 3" />
+            <span class="font-bold">Project</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <form class=" flex items-center flex-col" action="">
+        <div class="bg-[#32223D] flex  p-4 flex-col rounded-t-[20px] w-[70%]  justify-center items-center gap-5">
+          <h1 class="text-2xl font-semibold">Contact</h1>
+          <input class="rounded-xl w-1/2 p-2" type="text" placeholder="Name" required />
+          <input class="rounded-xl w-1/2  p-2" type="email" placeholder="Email" required />
+          <input class="rounded-xl w-1/2  p-2" type="text" placeholder="Subject" required />
+          <textarea class="rounded-xl h-36 w-[95%] p-2" placeholder="Message" required></textarea>
 
           <div class="w-full h-12 flex justify-center items-center gap-2">
-            <button type="submit" class="bg-[#46265C]  rounded-xl w-1/2 h-10 ">Submit</button>
+            <button
+              type="submit"
+              class="bg-[#46265C] font-bold text-xl rounded-xl w-1/2 h-10"
+            >
+              Submit
+            </button>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-x-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-linkedin"></i>
           </div>
-        
-      </div>
+         
+        </div>
+        <img class="rounded-b-[20px] w-[70%] " src="map.png" alt="">
       </form>
+      
     </div>
 
-    <div class="w-1/2 bg-[#794D9A]">
+    <!-- Hidden Mobile Menu -->
+    <div class="w-1/2 bg-[#794D9A] sm:hidden">
       <div class="h-10 w-full flex justify-end p-2">
         <i class="fa-regular fa-circle-xmark"></i>
       </div>
       <div class="flex flex-col gap-8 items-center text-white">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Skills</a>
-        <a href="">Portfolio</a>
-        <a href="">Shop</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Shop</a>
       </div>
     </div>
   </body>
