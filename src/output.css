@@ -610,40 +610,12 @@ video {
   width: 50%;
 }
 
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-\[166px\] {
-  width: 166px;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[600px\] {
-  width: 600px;
-}
-
-.w-\[70\%\] {
-  width: 70%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
 
 .w-\[90\%\] {
   width: 90%;
-}
-
-.w-\[95\%\] {
-  width: 95%;
 }
 
 .w-full {
@@ -654,16 +626,20 @@ video {
   min-width: 300px;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
 .max-w-\[200px\] {
   max-width: 200px;
 }
 
-.max-w-\[250px\] {
-  max-width: 250px;
-}
-
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-col {
@@ -718,10 +694,6 @@ video {
   overflow-x: hidden;
 }
 
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -744,16 +716,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-b-\[20px\] {
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.rounded-t-\[20px\] {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 .bg-\[\#32223D\] {
@@ -819,10 +781,6 @@ video {
   text-align: center;
 }
 
-.text-start {
-  text-align: start;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -851,22 +809,17 @@ video {
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-\[\#A96CD7\] {
   --tw-text-opacity: 1;
   color: rgb(169 108 215 / var(--tw-text-opacity));
-}
-
-.text-\[\#FFFFFF\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -899,10 +852,6 @@ video {
     width: 166px;
   }
 
-  .sm\:w-\[70\%\] {
-    width: 70%;
-  }
-
   .sm\:w-\[75\%\] {
     width: 75%;
   }
@@ -911,20 +860,8 @@ video {
     width: auto;
   }
 
-  .sm\:w-full {
-    width: 100%;
-  }
-
-  .sm\:w-\[80\%\] {
-    width: 80%;
-  }
-
   .sm\:max-w-none {
     max-width: none;
-  }
-
-  .sm\:justify-start {
-    justify-content: flex-start;
   }
 }
 
@@ -947,10 +884,6 @@ video {
 
   .md\:justify-normal {
     justify-content: normal;
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start;
   }
 
   .md\:justify-center {
